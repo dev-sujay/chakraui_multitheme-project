@@ -27,22 +27,22 @@ const MyCarousel = () => {
             showArrows={false}
         >
             <Box w={'full'} h={'100vh'} >
-                <Image src={img1} h={"full"} w={"full"} objectFit={"cover"}/>
+                <Image src={img1} h={"full"} w={"full"} objectFit={"cover"} objectPosition={"center"}/>
                 <Heading bg={'blackAlpha.600'}
                     color={'white'} {...headingOptions} >Watch the future</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img2} h={"full"} w={"full"} objectFit={"cover"}/>
+                <Image src={img2} h={"full"} w={"full"} objectFit={"cover"} objectPosition={"center"}/>
                 <Heading bg={'whiteAlpha.900'}
                     color={'black'} {...headingOptions} >Future is gaming</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img3} h={"full"} w={"full"} objectFit={"cover"}/>
+                <Image src={img3} h={"full"} w={"full"} objectFit={"cover"} objectPosition={"center"}/>
                 <Heading bg={'whiteAlpha.600'}
                     color={'black'} {...headingOptions} >Gaming on Console</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img4} h={"full"} w={"full"} objectFit={"cover"}/>
+                <Image src={img4} h={"full"} w={"full"} objectFit={"cover"} objectPosition={"center"}/>
                 <Heading bg={'whiteAlpha.600'}
                     color={'black'} {...headingOptions} >Night life is cool</Heading>
             </Box>
@@ -54,8 +54,10 @@ const Home = () => {
     return (
         <Box>
             <MyCarousel />
-            <Container minH={"100vh"} maxW={"Container.xl"} p={"16"}
-            className="services-container"
+            <Container 
+            minH={"100vh"} 
+            maxW={"Container.xl"} 
+            p={["8","16"]}
             >
                 <Heading textTransform={"uppercase"} py={2}
                     w={"fit-content"} borderBottom={'2px solid'}
