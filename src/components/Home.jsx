@@ -25,7 +25,6 @@ const MyCarousel = () => {
             interval={1000}
             showStatus={false}
             showArrows={false}
-            dynamicHeight
         >
             <Box w={'full'} h={'100vh'} >
                 <Image src={img1} h={"full"} w={"full"} objectFit={"cover"}/>
