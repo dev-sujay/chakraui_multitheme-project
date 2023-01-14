@@ -27,22 +27,22 @@ const MyCarousel = () => {
             dynamicHeight
         >
             <Box w={'full'} h={'100vh'} >
-                <Image src={img1} objectFit={"cover"}/>
+                <Image src={img1} h={"full"} w={"full"} objectFit={"cover"}/>
                 <Heading bg={'blackAlpha.600'}
                     color={'white'} {...headingOptions} top={["15%", "50%"]}>Watch the future</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img2} />
+                <Image src={img2} h={"full"} w={"full"} objectFit={"cover"}/>
                 <Heading bg={'whiteAlpha.900'}
                     color={'black'} {...headingOptions} top={["15%", "50%"]}>Future is gaming</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img3} />
+                <Image src={img3} h={"full"} w={"full"} objectFit={"cover"}/>
                 <Heading bg={'whiteAlpha.600'}
                     color={'black'} {...headingOptions} top={["15%", "50%"]}>Gaming on Console</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
-                <Image src={img4} />
+                <Image src={img4} h={"full"} w={"full"} objectFit={"cover"}/>
                 <Heading bg={'whiteAlpha.600'}
                     color={'black'} {...headingOptions} top={["15%", "50%"]}>Night life is cool</Heading>
             </Box>
