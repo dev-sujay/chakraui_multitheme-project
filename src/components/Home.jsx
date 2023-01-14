@@ -11,11 +11,9 @@ import img5 from '../assets/5.png';
 const headingOptions = {
     pos: 'absolute',
     left: '50%',
-    top: '50%',
     transform: 'translate(-50%, -50%)',
     textTransform: 'uppercase',
-    p: '4',
-    size: '3xl',
+    p: '4'
 };
 
 const MyCarousel = () => {
@@ -26,26 +24,27 @@ const MyCarousel = () => {
             interval={1000}
             showStatus={false}
             showArrows={false}
+            dynamicHeight
         >
-            <Box w={'full'} h={'100vh'}>
-                <Image src={img1} objectFit={"cover"} />
+            <Box w={'full'} h={'100vh'} >
+                <Image src={img1} objectFit={"cover"}/>
                 <Heading bg={'blackAlpha.600'}
-                    color={'white'} {...headingOptions}>Watch the future</Heading>
+                    color={'white'} {...headingOptions} top={["15%", "50%"]}>Watch the future</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
                 <Image src={img2} />
                 <Heading bg={'whiteAlpha.900'}
-                    color={'black'} {...headingOptions}>Future is gaming</Heading>
+                    color={'black'} {...headingOptions} top={["15%", "50%"]}>Future is gaming</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
                 <Image src={img3} />
                 <Heading bg={'whiteAlpha.600'}
-                    color={'black'} {...headingOptions}>Gaming on Console</Heading>
+                    color={'black'} {...headingOptions} top={["15%", "50%"]}>Gaming on Console</Heading>
             </Box>
             <Box w={'full'} h={'100vh'}>
                 <Image src={img4} />
                 <Heading bg={'whiteAlpha.600'}
-                    color={'black'} {...headingOptions}>Night life is cool</Heading>
+                    color={'black'} {...headingOptions} top={["15%", "50%"]}>Night life is cool</Heading>
             </Box>
         </Carousel>
     );
@@ -55,7 +54,9 @@ const Home = () => {
     return (
         <Box>
             <MyCarousel />
-            <Container minH={"100vh"} maxW={"Container.xl"} p={"16"}>
+            <Container minH={"100vh"} maxW={"Container.xl"} p={"16"}
+            className="services-container"
+            >
                 <Heading textTransform={"uppercase"} py={2}
                     w={"fit-content"} borderBottom={'2px solid'}
                     m={"auto"}>

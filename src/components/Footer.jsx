@@ -4,11 +4,19 @@ import { AiOutlineSend } from "react-icons/ai"
 
 const Footer = () => {
     return (
-        <Box bg={"blackAlpha.900"} minH={"40"} p={"16"}
+        <Box
+            bg={"blackAlpha.900"}
+            minH={"40"}
+            w={"100%"}
+            p={"16"}
             color={"white"}
+            className="footer"
         >
             <Stack direction={["column", "row"]}>
-                <VStack alignItems={"stretch"} w={"full"} px={"4"}>
+                <VStack
+                    alignItems={"stretch"}
+                    w={"full"}
+                    px={"4"}>
                     <Heading size={"md"} textTransform={"uppercase "} textAlign={["center", "left"]}>
                         subscribe to get updates
                     </Heading>
